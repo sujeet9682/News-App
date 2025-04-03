@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       .h1{
+        text-align: center;
+        position: relative;
+        margin: 0;
+        width: 100%;
+        background-color: blue;
+        padding: 15px 0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       
+       .title-text {
+        margin-right: 20px;
+       }
+       
+       #navbar-country-selector {
+        display: flex;
+        align-items: center;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="h1">
+            <span class="title-text">Latest News</span>
+            <div id="navbar-country-selector">
+                <!-- Country selector will be placed here -->
+            </div>
+        </div>
+        <div id="category-buttons" style="text-align: center;">
+            <!-- Category buttons here -->
+        </div>
+    </header>
+    
+    <div class="container" id="news-container">
+        <!-- News articles here dynamically -->
+    </div>
+
+    <script src="app.js"></script>
+    <script src="config.js"></script>
+    <script src="displayNews.js"></script>
+</body>
+</html>

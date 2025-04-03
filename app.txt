@@ -1,0 +1,25 @@
+### index.html for rendering whole application
+
+### api.js for calling apis first
+
+### then services run to answer the query
+
+### then navbar loaded
+    Use HTML for static elements (navbar, footer, page layout).
+
+### then newscard loaded to go inside (smallest thing in app)
+    Instead of writing HTML for each news card, write a template in JavaScript and inject it.
+
+### then list is ready to show things
+
+### now call home.js and show things
+
+### and show category if someone want category wise news list
+
+### Features & Technologies Used:  
+### API Fetching**: Used `fetch()` to retrieve news data efficiently.  
+### Modern JavaScript (ES6+)**: Utilized `forEach`, template literals, and `async/await`.  
+### Promise Handling**: Managed API responses using `async/await` for cleaner asynchronous operations.  
+### DOM Manipulation**: Dynamically created elements via JavaScript for performance and security.  
+### Session Storage**: Cached data in `sessionStorage` to reduce redundant API calls. 
+### Infinite Scroll**: Implemented lazy loading to fetch more news as the user scrolls down.

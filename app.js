@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const newsContainer = document.getElementById("news-container");
   const categoryButtons = document.getElementById("category-buttons");
 
-  const API_KEY = CONFIG.API_KEY;     // work locally
+  // const API_KEY = CONFIG.API_KEY;     // work locally
   const BASE_URL = "https://newsapi.org/v2";
 
   const categories = [

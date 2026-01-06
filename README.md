@@ -1,4 +1,7 @@
-## Features & Technologies Used:  
+this is plain HTML / CSS / JS
+Netlify Publish directory	/
+
+## Features & Concepts :  
 #### API Fetching**: Used `fetch()` to retrieve news data efficiently.  
 #### Modern JavaScript (ES6+)**: Utilized `forEach`, template literals, and `async/await`.  
 #### Promise Handling**: Managed API responses using `async/await` for cleaner asynchronous operations.  

@@ -1,5 +1,8 @@
+
+##  🔗 [News App - using Free API](https://newstree.netlify.app/) 
+
 this is plain HTML / CSS / JS
-Netlify Publish directory	/
+Netlify Publish directory	-> /
 
 ## Features & Concepts :  
 #### API Fetching**: Used `fetch()` to retrieve news data efficiently.  

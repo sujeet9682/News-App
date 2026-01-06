@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const newsContainer = document.getElementById("news-container");
   const categoryButtons = document.getElementById("category-buttons");
 
-  const API_KEY = CONFIG.API_KEY;
+  const API_KEY = CONFIG.API_KEY;     // work locally
   const BASE_URL = "https://newsapi.org/v2";
 
   const categories = [
@@ -97,11 +97,17 @@ document.addEventListener("DOMContentLoaded", function () {
         newsContainer.innerHTML = "";
       }
       
-      const response = await fetch(
-        `${BASE_URL}/top-headlines?category=${category}&country=${currentCountry}&page=${page}&pageSize=10&apiKey=${API_KEY}`
-      );
-      const data = await response.json();
+      // const response = await fetch(
+      //   `${BASE_URL}/top-headlines?category=${category}&country=${currentCountry}&page=${page}&pageSize=10&apiKey=${API_KEY}`
+      // );
+      // const data = await response.json();
       
+      const response = await fetch(
+        `/.netlify/functions/news?category=${category}&country=${currentCountry}&page=${page}`
+      );
+  
+      const data = await response.json();
+
       if (data.status === "ok") {
         const articles = data.articles;
         console.log(`Fetched ${articles.length} articles for ${category}, country ${currentCountry}, page ${page}`);
@@ -199,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
     currentCategory = selectedCategory;
     fetchNews(selectedCategory, 1, true); // Fetch news based on saved category
   } else {
-    fetchNews("business", 1, true); // Default to 'business' category
+    fetchNews("health", 1, true); // Default to 'business' category
   }
 
   // Render the category buttons
